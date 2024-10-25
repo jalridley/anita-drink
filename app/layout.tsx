@@ -51,7 +51,7 @@ export default function RootLayout({
           {children}
           <footer className="-top-14 flex h-8 w-full shrink-0 flex-col items-center gap-2 px-4 py-6 text-sm sm:flex-row md:px-6">
             <p className="text-gray-500">
-              © 2024 Client name all rights reserved.
+              © 2024 Anita Drink all rights reserved.
             </p>
             <nav className="flex gap-4 sm:ml-auto sm:gap-6">
               <Link href={''}>Instagram Logo</Link>
