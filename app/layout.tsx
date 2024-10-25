@@ -30,7 +30,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="flex min-h-[100dvh] flex-col">
+        <div className="flex min-h-[100dvh] flex-col bg-black">
           <header className="fixed left-0 right-0 top-0 z-50 flex h-14 items-center justify-between space-x-4 bg-pink-600 px-4 text-3xl font-extrabold text-white lg:px-6">
             <Link className="flex h-full items-center justify-center" href="/">
               <Image
