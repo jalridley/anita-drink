@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import './globals.css';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -31,8 +32,14 @@ export default function RootLayout({
       >
         <div className="flex min-h-[100dvh] flex-col">
           <header className="fixed left-0 right-0 top-0 z-50 flex h-14 items-center justify-between space-x-4 bg-pink-600 px-4 text-3xl font-extrabold text-white lg:px-6">
-            <Link className="flex items-center justify-center" href="/">
-              LOGO
+            <Link className="flex h-full items-center justify-center" href="/">
+              <Image
+                className="h-full w-auto"
+                alt="Anita face logo"
+                src={'/Anita_drink_Stencil.jpg'}
+                width={1249}
+                height={1707}
+              />
             </Link>
             <nav
               aria-label="Main Navigation"
