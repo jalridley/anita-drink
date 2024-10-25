@@ -49,7 +49,7 @@ export default function RootLayout({
             </nav>
           </header>
           {children}
-          <footer className="flex w-full shrink-0 flex-col items-center gap-2 px-4 py-6 text-sm sm:flex-row md:px-6">
+          <footer className="-top-14 flex h-8 w-full shrink-0 flex-col items-center gap-2 px-4 py-6 text-sm sm:flex-row md:px-6">
             <p className="text-gray-500">
               © 2024 Client name all rights reserved.
             </p>
