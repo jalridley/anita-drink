@@ -29,8 +29,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="flex min-h-[100dvh] flex-col bg-white text-black">
-          <header className="fixed left-0 right-0 top-0 z-50 flex h-14 items-center justify-between space-x-4 bg-white bg-opacity-90 px-4 shadow-md lg:px-6">
+        <div className="flex min-h-[100dvh] flex-col">
+          <header className="fixed left-0 right-0 top-0 z-50 flex h-14 items-center justify-between space-x-4 bg-pink-600 px-4 text-3xl font-extrabold text-white lg:px-6">
             <Link className="flex items-center justify-center" href="/">
               LOGO
             </Link>
@@ -49,10 +49,8 @@ export default function RootLayout({
             </nav>
           </header>
           {children}
-          <footer className="-top-14 flex h-8 w-full shrink-0 flex-col items-center gap-2 px-4 py-6 text-sm sm:flex-row md:px-6">
-            <p className="text-gray-500">
-              © 2024 Anita Drink all rights reserved.
-            </p>
+          <footer className="-top-14 flex h-8 w-full shrink-0 flex-col items-center gap-2 bg-pink-600 px-4 py-6 text-lg font-extrabold text-white sm:flex-row lg:px-6">
+            <p>© 2024 Anita Drink all rights reserved.</p>
             <nav className="flex gap-4 sm:ml-auto sm:gap-6">
               <Link href={''}>Instagram Logo</Link>
               <Link href={''}>Facebook Logo</Link>
