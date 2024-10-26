@@ -46,8 +46,8 @@ export default function Home() {
             <CarouselItem>
               <Image
                 className="w-full"
-                alt="black and white stencil of Anita Drink's face"
-                src={'/anita-stencil-square.jpg'}
+                alt="Anita posing with hands on hips"
+                src={'/anita-hip-pose.jpg'}
                 width={756}
                 height={756}
               />
