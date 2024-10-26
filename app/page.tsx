@@ -142,6 +142,13 @@ export default function Home() {
               ></iframe>
             </CarouselItem>
             <CarouselItem>
+              <Image
+                className="w-full"
+                alt="Anita posing with a white paint splattered background"
+                src={'/anita-splatter.jpg'}
+                width={756}
+                height={756}
+              />
               <iframe
                 width="100%"
                 height="120"
