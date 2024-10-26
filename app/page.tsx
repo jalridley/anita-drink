@@ -86,6 +86,13 @@ export default function Home() {
               ></iframe>
             </CarouselItem>
             <CarouselItem>
+              <Image
+                className="w-full"
+                alt="Anita pulling messy blonde hair"
+                src={'/anita-hair-pull.jpg'}
+                width={756}
+                height={756}
+              />
               <iframe
                 width="100%"
                 height="120"
