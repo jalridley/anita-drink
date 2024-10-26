@@ -18,7 +18,7 @@ export default function Home() {
             <CarouselItem>
               <Image
                 className="w-full"
-                alt="black and white stencil of Anita Drink's face"
+                alt="Anita posing on stage with teddy bears"
                 src={'/anita-teddies.jpg'}
                 width={756}
                 height={756}
@@ -44,6 +44,13 @@ export default function Home() {
               ></iframe>
             </CarouselItem>
             <CarouselItem>
+              <Image
+                className="w-full"
+                alt="black and white stencil of Anita Drink's face"
+                src={'/anita-stencil-square.jpg'}
+                width={756}
+                height={756}
+              />
               <iframe
                 width="100%"
                 height="120"
