@@ -1,4 +1,5 @@
 import Hero from '@/components/Hero';
+import Image from 'next/image';
 import {
   Carousel,
   CarouselContent,
@@ -11,13 +12,17 @@ export default function Home() {
   return (
     <main className="px-4 pt-14 lg:px-6">
       <Hero />
-      <div className="flex justify-center text-3xl font-extrabold text-white">
-        DJ Mixes
-      </div>
       <div className="flex justify-center">
-        <Carousel className="flex w-2/3 justify-center bg-pink-600 p-4">
+        <Carousel className="flex w-1/4 justify-center">
           <CarouselContent>
             <CarouselItem>
+              <Image
+                className="w-full"
+                alt="black and white stencil of Anita Drink's face"
+                src={'/anita-teddies.jpg'}
+                width={756}
+                height={756}
+              />
               <iframe
                 width="100%"
                 height="120"
