@@ -100,6 +100,13 @@ export default function Home() {
               ></iframe>
             </CarouselItem>
             <CarouselItem>
+              <Image
+                className="w-full"
+                alt="Anita posing glamourously in a sparkling dress"
+                src={'/anita-glamour.jpg'}
+                width={756}
+                height={756}
+              />
               <iframe
                 width="100%"
                 height="120"
