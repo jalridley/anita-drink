@@ -10,10 +10,10 @@ import {
 
 export default function Home() {
   return (
-    <main className="px-4 pt-14 lg:px-6">
+    <main className="w-full px-4 pt-14 lg:px-6">
       <Hero />
-      <div className="flex justify-center">
-        <Carousel className="flex w-1/4 justify-center">
+      <div className="grid grid-cols-1 gap-2 px-12 py-12 md:gap-4 lg:grid-cols-3 lg:gap-12 lg:p-0">
+        <Carousel className="lg:col-start-2">
           <CarouselContent>
             <CarouselItem>
               <Image
@@ -160,7 +160,6 @@ export default function Home() {
           <CarouselNext />
         </Carousel>
       </div>
-      <div></div>
     </main>
   );
 }
