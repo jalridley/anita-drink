@@ -72,6 +72,13 @@ export default function Home() {
               ></iframe>
             </CarouselItem>
             <CarouselItem>
+              <Image
+                className="w-full"
+                alt="Anita posing in a ripped red dress"
+                src={'/anita-red-dress.jpg'}
+                width={756}
+                height={756}
+              />
               <iframe
                 width="100%"
                 height="120"
