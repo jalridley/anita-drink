@@ -31,7 +31,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className="flex min-h-[100dvh] flex-col justify-between bg-black">
-          <header className="fixed left-0 right-0 top-0 z-50 flex h-14 items-center justify-between space-x-4 bg-pink-600 px-4 py-2 text-3xl font-extrabold text-white shadow-xl lg:px-6">
+          <header className="fixed left-0 right-0 top-0 z-50 flex h-14 items-center justify-between bg-pink-600 px-4 py-2 text-lg font-extrabold text-white shadow-xl md:text-2xl lg:space-x-4 lg:px-6 lg:text-3xl">
             <Link className="flex h-full items-center justify-center" href="/">
               <Image
                 className="mr-2 h-full w-auto rounded-full border border-black"
@@ -40,11 +40,11 @@ export default function RootLayout({
                 width={272}
                 height={272}
               />
-              <span>Anita Drink</span>
+              <span className="shrink-0">Anita Drink</span>
             </Link>
             <nav
               aria-label="Main Navigation"
-              className="ml-auto hidden gap-4 sm:gap-6 md:flex"
+              className="lg::gap-6 ml-auto hidden gap-4 md:flex"
             >
               <Link href={'/about'}>About</Link>
               <Link href={''}>Gigs</Link>
@@ -57,8 +57,8 @@ export default function RootLayout({
             </nav>
           </header>
           <div className="pt-14">{children}</div>
-          <footer className="-top-14 mt-14 flex h-8 w-full shrink-0 flex-col items-center gap-2 bg-black px-4 py-6 text-lg font-extrabold text-white sm:flex-row lg:px-6">
-            <p>© 2024 Anita Drink all rights reserved.</p>
+          <footer className="md:text-md -top-14 mt-14 flex h-8 w-full shrink-0 flex-col items-center justify-between gap-2 bg-black px-4 py-6 text-sm font-extrabold text-white sm:flex-row lg:px-6">
+            <p className="shrink-0">© 2024 Anita Drink all rights reserved.</p>
             <nav className="flex gap-4 sm:ml-auto sm:gap-6">
               <Link
                 href={'https://www.instagram.com/anitadrinklipstick/'}
