@@ -10,14 +10,14 @@ import {
 
 export default function Home() {
   return (
-    <main className="w-full px-4 pt-14 lg:px-6">
+    <main className="grid w-full grid-cols-1 gap-2 px-4 pt-14 md:gap-4 lg:grid-cols-3 lg:gap-12 lg:px-6">
       <Hero />
-      <div className="grid grid-cols-1 gap-2 px-12 py-12 md:gap-4 lg:grid-cols-3 lg:gap-12 lg:p-0">
-        <Carousel className="lg:col-start-2">
+      <div className="col-span-3 grid grid-cols-subgrid py-12 md:gap-4 lg:col-start-2 lg:p-0">
+        <Carousel className="w-full">
           <CarouselContent>
             <CarouselItem>
               <Image
-                className="w-full"
+                className="w-full object-contain"
                 alt="Anita posing on stage with teddy bears"
                 src={'/anita-teddies.jpg'}
                 width={756}
@@ -31,7 +31,7 @@ export default function Home() {
             </CarouselItem>
             <CarouselItem>
               <Image
-                className="w-full"
+                className="w-full object-contain"
                 alt="black and white stencil of Anita Drink's face"
                 src={'/anita-stencil-square.jpg'}
                 width={756}
@@ -45,7 +45,7 @@ export default function Home() {
             </CarouselItem>
             <CarouselItem>
               <Image
-                className="w-full"
+                className="w-full object-contain"
                 alt="Anita posing with hands on hips"
                 src={'/anita-hip-pose.jpg'}
                 width={756}
@@ -59,7 +59,7 @@ export default function Home() {
             </CarouselItem>
             <CarouselItem>
               <Image
-                className="w-full"
+                className="w-full object-contain"
                 alt="Anita posing pink party streamers"
                 src={'/anita-pink.jpg'}
                 width={756}
@@ -73,7 +73,7 @@ export default function Home() {
             </CarouselItem>
             <CarouselItem>
               <Image
-                className="w-full"
+                className="w-full object-contain"
                 alt="Anita posing in a ripped red dress"
                 src={'/anita-red-dress.jpg'}
                 width={756}
@@ -87,7 +87,7 @@ export default function Home() {
             </CarouselItem>
             <CarouselItem>
               <Image
-                className="w-full"
+                className="w-full object-contain"
                 alt="Anita pulling messy blonde hair"
                 src={'/anita-hair-pull.jpg'}
                 width={756}
@@ -101,7 +101,7 @@ export default function Home() {
             </CarouselItem>
             <CarouselItem>
               <Image
-                className="w-full"
+                className="w-full object-contain"
                 alt="Anita posing glamourously in a sparkling dress"
                 src={'/anita-glamour.jpg'}
                 width={756}
@@ -115,7 +115,7 @@ export default function Home() {
             </CarouselItem>
             <CarouselItem>
               <Image
-                className="w-full"
+                className="w-full object-contain"
                 alt="Anita putting makeup powder on face"
                 src={'/anita-makeup.jpg'}
                 width={756}
@@ -129,7 +129,7 @@ export default function Home() {
             </CarouselItem>
             <CarouselItem>
               <Image
-                className="w-full"
+                className="w-full object-contain"
                 alt="Anita posing with a wooden ladder"
                 src={'/anita-ladder.jpg'}
                 width={756}
@@ -143,7 +143,7 @@ export default function Home() {
             </CarouselItem>
             <CarouselItem>
               <Image
-                className="w-full"
+                className="w-full object-contain"
                 alt="Anita posing with a white paint splattered background"
                 src={'/anita-splatter.jpg'}
                 width={756}

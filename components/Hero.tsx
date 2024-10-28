@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <section className="grid grid-cols-1 bg-black pt-4 md:grid-cols-3 md:gap-4 lg:h-[calc(100vh-56px)] lg:items-center lg:gap-12 lg:pt-0">
+    <section className="col-span-3 grid grid-cols-subgrid bg-black pt-4 lg:h-[calc(100vh-56px)] lg:items-center lg:pt-0">
       <Image
         className="hidden w-full bg-cyan-400 md:block"
         alt="black and white stencil of Anita Drink's face"
