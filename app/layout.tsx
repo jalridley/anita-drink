@@ -55,7 +55,7 @@ export default function RootLayout({
               Hamburger nav small screens with same links
             </nav>
           </header>
-          {children}
+          <div className="pt-14">{children}</div>
           <footer className="-top-14 mt-14 flex h-8 w-full shrink-0 flex-col items-center gap-2 bg-black px-4 py-6 text-lg font-extrabold text-white sm:flex-row lg:px-6">
             <p>© 2024 Anita Drink all rights reserved.</p>
             <nav className="flex gap-4 sm:ml-auto sm:gap-6">
