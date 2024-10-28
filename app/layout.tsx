@@ -30,7 +30,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="flex min-h-[100dvh] flex-col bg-black">
+        <div className="flex min-h-[100dvh] flex-col justify-between bg-black">
           <header className="fixed left-0 right-0 top-0 z-50 flex h-14 items-center justify-between space-x-4 bg-pink-600 px-4 py-2 text-3xl font-extrabold text-white shadow-xl lg:px-6">
             <Link className="flex h-full items-center justify-center" href="/">
               <Image
@@ -45,7 +45,7 @@ export default function RootLayout({
               aria-label="Main Navigation"
               className="ml-auto hidden gap-4 sm:gap-6 md:flex"
             >
-              <Link href={''}>About</Link>
+              <Link href={'/about'}>About</Link>
               <Link href={''}>Gigs</Link>
               <Link href={''}>Merch</Link>
               <Link href={''}>Socials</Link>
