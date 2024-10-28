@@ -59,10 +59,27 @@ export default function RootLayout({
           <footer className="-top-14 mt-14 flex h-8 w-full shrink-0 flex-col items-center gap-2 bg-black px-4 py-6 text-lg font-extrabold text-white sm:flex-row lg:px-6">
             <p>© 2024 Anita Drink all rights reserved.</p>
             <nav className="flex gap-4 sm:ml-auto sm:gap-6">
-              <Link href={''}>Instagram Logo</Link>
-              <Link href={''}>Facebook Logo</Link>
-              <Link href={''}>Bandcamp Logo</Link>
-              <Link href={''}>Mixcloud Logo</Link>
+              <Link
+                href={'https://www.instagram.com/anitadrinklipstick/'}
+                target="_blank"
+              >
+                Instagram Logo
+              </Link>
+              <Link
+                href={'https://www.facebook.com/djanitadrink/'}
+                target="_blank"
+              >
+                Facebook Logo
+              </Link>
+              <Link href={'https://eatlipstick.bandcamp.com/'} target="_blank">
+                Bandcamp Logo
+              </Link>
+              <Link
+                href={'https://www.mixcloud.com/anitadrink/'}
+                target="_blank"
+              >
+                Mixcloud Logo
+              </Link>
             </nav>
           </footer>
         </div>
