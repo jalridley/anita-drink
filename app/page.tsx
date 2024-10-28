@@ -10,7 +10,7 @@ import {
 
 export default function Home() {
   return (
-    <main className="grid w-full grid-cols-1 gap-2 px-4 pt-14 md:gap-4 lg:grid-cols-3 lg:gap-12 lg:px-6">
+    <main className="grid w-full grid-cols-1 gap-2 px-4 md:gap-4 lg:grid-cols-3 lg:gap-12 lg:px-6">
       <Hero />
       <div className="col-span-3 grid grid-cols-subgrid py-12 md:gap-4 lg:col-start-2 lg:p-0">
         <Carousel className="w-full">
