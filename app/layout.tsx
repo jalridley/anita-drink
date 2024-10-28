@@ -34,12 +34,13 @@ export default function RootLayout({
           <header className="fixed left-0 right-0 top-0 z-50 flex h-14 items-center justify-between space-x-4 bg-pink-600 px-4 py-2 text-3xl font-extrabold text-white shadow-xl lg:px-6">
             <Link className="flex h-full items-center justify-center" href="/">
               <Image
-                className="h-full w-auto rounded-full border border-black"
-                alt="Anita face stencil logo"
+                className="mr-2 h-full w-auto rounded-full border border-black"
+                alt="Anita face stencil avatar"
                 src={'/anita-stencil-thumb.jpg'}
                 width={272}
                 height={272}
               />
+              <span>Anita Drink</span>
             </Link>
             <nav
               aria-label="Main Navigation"
