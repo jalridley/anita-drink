@@ -3,6 +3,7 @@ import localFont from 'next/font/local';
 import './globals.css';
 import Link from 'next/link';
 import Image from 'next/image';
+import DropdownMenuCustom from '@/components/DropdownMenuCustom';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -53,7 +54,15 @@ export default function RootLayout({
               <Link href={''}>Contact</Link>
             </nav>
             <nav aria-label="Main Navigation" className="block md:hidden">
-              Hamburger nav small screens with same links
+              <DropdownMenuCustom
+                menuItems={[
+                  { label: 'About', url: '/about' },
+                  { label: 'Gigs', url: '' },
+                  { label: 'Merch', url: '' },
+                  { label: 'Socials', url: '' },
+                  { label: 'Contact', url: '' },
+                ]}
+              />
             </nav>
           </header>
           <div className="pt-14">{children}</div>
