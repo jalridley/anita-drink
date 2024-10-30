@@ -59,7 +59,7 @@ export default function RootLayout({
                 href={'https://www.mixcloud.com/anitadrink/'}
                 target="_blank"
               >
-                <FaMixcloud className="h-full w-full stroke-2" />
+                <FaMixcloud className="h-full w-10" />
               </Link>
               <Link
                 href={'https://www.instagram.com/anitadrinklipstick/'}
@@ -105,7 +105,7 @@ export default function RootLayout({
                 href={'https://www.mixcloud.com/anitadrink/'}
                 target="_blank"
               >
-                <FaMixcloud className="h-full w-full" />
+                <FaMixcloud className="h-full w-10" />
               </Link>
               <Link
                 href={'https://www.instagram.com/anitadrinklipstick/'}
