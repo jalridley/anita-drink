@@ -12,13 +12,14 @@ import Link from 'next/link';
 type MenuItem = {
   label: string;
   url: string;
+  target?: string;
 };
 
-type DropdownMenuCustomProps = {
+type MenuItems = {
   menuItems: MenuItem[];
 };
 
-const DropdownMenuCustom = ({ menuItems }: DropdownMenuCustomProps) => {
+const DropdownMenuCustom = ({ menuItems }: MenuItems) => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger>
