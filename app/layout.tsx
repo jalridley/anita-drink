@@ -28,32 +28,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const socialMedia = [
-    {
-      icon: '',
-      label: 'Instagram',
-      url: 'https://www.instagram.com/anitadrinklipstick/',
-      target: '_blank',
-    },
-    {
-      icon: '',
-      label: 'Facebook',
-      url: 'https://www.facebook.com/djanitadrink/',
-      target: '_blank',
-    },
-    {
-      icon: '',
-      label: 'Mixcloud',
-      url: 'https://www.mixcloud.com/anitadrink/',
-      target: '_blank',
-    },
-    {
-      icon: '',
-      label: 'Bandcamp',
-      url: 'https://eatlipstick.bandcamp.com/',
-      target: '_blank',
-    },
-  ];
   const navItems = [
     { label: 'about', url: '/about' },
     {
