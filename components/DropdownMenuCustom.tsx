@@ -6,7 +6,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from './ui/dropdown-menu';
-import { MenuIcon } from 'lucide-react';
+import { FaBars } from 'react-icons/fa6';
 import Link from 'next/link';
 
 type MenuItem = {
@@ -23,12 +23,14 @@ const DropdownMenuCustom = ({ menuItems }: MenuItems) => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger>
-        <MenuIcon />
+        <FaBars />
       </DropdownMenuTrigger>
       <DropdownMenuContent>
         {menuItems.map((item) => (
           <DropdownMenuItem key={item.label}>
-            <Link href={item.url}>{item.label}</Link>
+            <Link href={item.url} target={item.target}>
+              {item.label}
+            </Link>
           </DropdownMenuItem>
         ))}
       </DropdownMenuContent>

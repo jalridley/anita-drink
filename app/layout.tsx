@@ -90,7 +90,10 @@ export default function RootLayout({
                 </Link>
               ))}
             </nav>
-            <nav aria-label="Main Navigation" className="block md:hidden">
+            <nav
+              aria-label="Main Navigation"
+              className="flex items-center md:hidden"
+            >
               <DropdownMenuCustom menuItems={navItems} />
             </nav>
           </header>
