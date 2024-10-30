@@ -26,6 +26,41 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const socialMedia = [
+    {
+      icon: '',
+      label: 'Instagram',
+      url: 'https://www.instagram.com/anitadrinklipstick/',
+      target: '_blank',
+    },
+    {
+      icon: '',
+      label: 'Facebook',
+      url: 'https://www.facebook.com/djanitadrink/',
+      target: '_blank',
+    },
+    {
+      icon: '',
+      label: 'Mixcloud',
+      url: 'https://www.mixcloud.com/anitadrink/',
+      target: '_blank',
+    },
+    {
+      icon: '',
+      label: 'Bandcamp',
+      url: 'https://eatlipstick.bandcamp.com/',
+      target: '_blank',
+    },
+  ];
+  const navItems = [
+    { label: 'about', url: '/about' },
+    {
+      label: 'merch',
+      url: 'https://eatlipstick.bandcamp.com/merch',
+      target: '_blank',
+    },
+    { label: 'contact', url: '/contact' },
+  ];
   return (
     <html lang="en">
       <body
@@ -45,24 +80,16 @@ export default function RootLayout({
             </Link>
             <nav
               aria-label="Main Navigation"
-              className="lg::gap-6 ml-auto hidden gap-4 md:flex"
+              className="ml-auto hidden gap-4 md:flex lg:gap-6"
             >
-              <Link href={'/about'}>About</Link>
-              <Link href={''}>Gigs</Link>
-              <Link href={''}>Merch</Link>
-              <Link href={''}>Socials</Link>
-              <Link href={''}>Contact</Link>
+              {navItems.map((item) => (
+                <Link key={item.label} href={item.url}>
+                  {item.label}
+                </Link>
+              ))}
             </nav>
             <nav aria-label="Main Navigation" className="block md:hidden">
-              <DropdownMenuCustom
-                menuItems={[
-                  { label: 'About', url: '/about' },
-                  { label: 'Gigs', url: '' },
-                  { label: 'Merch', url: '' },
-                  { label: 'Socials', url: '' },
-                  { label: 'Contact', url: '' },
-                ]}
-              />
+              <DropdownMenuCustom menuItems={navItems} />
             </nav>
           </header>
           <div className="pt-14">{children}</div>
