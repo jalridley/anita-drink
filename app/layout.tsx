@@ -4,6 +4,8 @@ import './globals.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import DropdownMenuCustom from '@/components/DropdownMenuCustom';
+import { FaBandcamp, FaInstagram, FaFacebook } from 'react-icons/fa';
+import { FaMixcloud } from 'react-icons/fa6';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -83,7 +85,7 @@ export default function RootLayout({
               className="ml-auto hidden gap-4 md:flex lg:gap-6"
             >
               {navItems.map((item) => (
-                <Link key={item.label} href={item.url}>
+                <Link key={item.label} href={item.url} target={item.target}>
                   {item.label}
                 </Link>
               ))}
@@ -100,22 +102,22 @@ export default function RootLayout({
                 href={'https://www.instagram.com/anitadrinklipstick/'}
                 target="_blank"
               >
-                Instagram Logo
+                <FaInstagram />
               </Link>
               <Link
                 href={'https://www.facebook.com/djanitadrink/'}
                 target="_blank"
               >
-                Facebook Logo
+                <FaFacebook />
               </Link>
               <Link href={'https://eatlipstick.bandcamp.com/'} target="_blank">
-                Bandcamp Logo
+                <FaBandcamp />
               </Link>
               <Link
                 href={'https://www.mixcloud.com/anitadrink/'}
                 target="_blank"
               >
-                Mixcloud Logo
+                <FaMixcloud />
               </Link>
             </nav>
           </footer>
