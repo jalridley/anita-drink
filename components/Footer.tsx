@@ -4,7 +4,7 @@ import {
   FaInstagram,
   FaFacebook,
   FaBandcamp,
-} from 'react-icons/fa';
+} from 'react-icons/fa6';
 
 const Footer = () => {
   return (
