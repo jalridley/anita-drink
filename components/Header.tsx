@@ -17,7 +17,7 @@ const Header = () => {
       url: 'https://eatlipstick.bandcamp.com/merch',
       target: '_blank',
     },
-    { label: 'contact', url: '/contact' },
+    { label: 'bookings', url: '/bookings' },
   ];
   return (
     <header className="fixed left-0 right-0 top-0 z-50 flex h-14 items-center justify-between bg-pink-600 px-2 py-2 text-lg font-extrabold text-white shadow-xl md:px-4 md:text-2xl lg:space-x-4 lg:px-6 lg:text-3xl">
