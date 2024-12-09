@@ -8,6 +8,7 @@ import {
   FaBandcamp,
 } from 'react-icons/fa6';
 import DropdownMenuCustom from './DropdownMenuCustom';
+import { Button } from './ui/button';
 
 const Header = () => {
   const navItems = [
@@ -64,6 +65,16 @@ const Header = () => {
         >
           <DropdownMenuCustom menuItems={navItems} />
         </nav>
+        <Button
+          asChild
+          className="rounded-3xl bg-cyan-400 text-3xl font-extrabold"
+          size="lg"
+          variant="default"
+        >
+          <Link href={'/bookings'} className="flex items-center justify-center">
+            bookings
+          </Link>
+        </Button>
       </div>
     </header>
   );
