@@ -75,7 +75,7 @@ export default function Home() {
   return (
     <main className="grid w-full grid-cols-1 gap-12 overflow-hidden px-2 md:grid-cols-3 md:px-4 lg:px-6">
       <Hero />
-      <div className="col-span-1 grid max-w-full grid-cols-subgrid object-contain px-16 py-12 md:col-span-2 md:col-start-2 md:px-0 lg:p-0">
+      <section className="col-span-1 grid max-w-full grid-cols-subgrid object-contain px-16 py-12 md:col-span-2 md:col-start-2 md:px-0 lg:p-0">
         <Carousel>
           <CarouselContent>
             {carouselItems.map((item) => (
@@ -94,7 +94,7 @@ export default function Home() {
           <CarouselPrevious />
           <CarouselNext />
         </Carousel>
-      </div>
+      </section>
     </main>
   );
 }
