@@ -60,6 +60,7 @@ const config: Config = {
       animation: {
         marquee: 'marquee 80s linear infinite',
         marquee2: 'marquee2 80s linear infinite',
+        rotate: 'rotate 3s linear infinite',
       },
       keyframes: {
         marquee: {
@@ -69,6 +70,10 @@ const config: Config = {
         marquee2: {
           '0%': { transform: 'translateX(100%)' },
           '100%': { transform: 'translateX(0%)' },
+        },
+        rotate: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
         },
       },
     },
