@@ -15,9 +15,9 @@ const Hero = () => {
         height={1707}
       />
       <Image
-        className="w-full md:z-10"
+        className="md:from-none md:to-none w-full bg-gradient-to-r from-white from-50% to-lime-400 to-50% md:z-10 md:bg-white md:bg-none"
         alt="black and white stencil of Anita Drink's face"
-        src={'/Anita_Drink_Stencil.jpg'}
+        src={'/Anita_Drink_Stencil_transp.png'}
         width={1249}
         height={1707}
       />
