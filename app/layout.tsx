@@ -17,7 +17,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: 'Anita Drink',
-  description: 'Anita Drink drag queen DJ artist page',
+  description: 'Drag queen DJ Anita Drink',
 };
 
 export default function RootLayout({
