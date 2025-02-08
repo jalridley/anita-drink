@@ -40,9 +40,7 @@ const BookingPage = () => {
     <div className="flex min-h-[calc(100vh-56px-48px)] flex-col items-center justify-center space-y-4 p-4">
       <Vinyl />
       <div className="w-full max-w-md rounded-2xl bg-gray-800 p-6 shadow-xl">
-        <h2 className="mb-4 text-xl font-bold text-white">
-          Book or Message Anita Drink
-        </h2>
+        <h2 className="mb-4 text-xl font-bold text-white">Book Anita Drink</h2>
         <form onSubmit={handleSubmit} className="space-y-4">
           <Input
             type="text"
