@@ -5,6 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 import emailjs from '@emailjs/browser';
+import Vinyl from '@/components/Vinyl';
 
 const BookingPage = () => {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
@@ -36,7 +37,8 @@ const BookingPage = () => {
   };
 
   return (
-    <div className="flex min-h-[calc(100vh-56px-48px)] items-center justify-center">
+    <div className="flex min-h-[calc(100vh-56px-48px)] flex-col items-center justify-center space-y-4 p-4">
+      <Vinyl />
       <div className="w-full max-w-md rounded-2xl bg-gray-800 p-6 shadow-xl">
         <h2 className="mb-4 text-xl font-bold text-white">
           Book or Message Anita Drink
