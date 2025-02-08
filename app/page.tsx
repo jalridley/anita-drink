@@ -74,9 +74,9 @@ export default function Home() {
   ];
 
   return (
-    <main className="grid w-full grid-cols-1 overflow-hidden px-2 md:grid-cols-3 md:px-4 lg:gap-12 lg:px-6">
+    <main className="grid w-full grid-cols-1 overflow-hidden px-2 md:grid-cols-3 md:px-4 lg:px-6 xl:gap-12">
       <Hero />
-      <div className="col-span-1 grid max-w-full grid-cols-subgrid object-contain px-16 pt-8 md:col-span-2 md:col-start-2 md:px-0 lg:p-0 xl:py-12">
+      <div className="col-span-1 grid max-w-full grid-cols-subgrid object-contain px-16 pt-8 md:col-span-2 md:col-start-2 md:px-0 lg:p-0 xl:pt-12">
         <Vinyl />
       </div>
       <section className="col-span-1 grid max-w-full grid-cols-subgrid object-contain px-16 py-8 md:col-span-2 md:col-start-2 md:px-0 lg:p-0 xl:py-12">
