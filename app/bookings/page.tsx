@@ -45,7 +45,7 @@ const BookingPage = () => {
           <Input
             type="text"
             name="name"
-            className="border-gray-600 bg-gray-900"
+            className="border-gray-600 bg-gray-900 text-white"
             value={form.name}
             onChange={handleChange}
             placeholder="Your Name"
@@ -54,7 +54,7 @@ const BookingPage = () => {
           <Input
             type="email"
             name="email"
-            className="border-gray-600 bg-gray-900"
+            className="border-gray-600 bg-gray-900 text-white"
             value={form.email}
             onChange={handleChange}
             placeholder="Your Email"
@@ -63,7 +63,7 @@ const BookingPage = () => {
           <Textarea
             name="message"
             value={form.message}
-            className="border-gray-600 bg-gray-900"
+            className="border-gray-600 bg-gray-900 text-white"
             onChange={handleChange}
             placeholder="Your Booking Message"
             required
