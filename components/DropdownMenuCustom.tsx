@@ -25,7 +25,7 @@ const DropdownMenuCustom = ({ menuItems }: MenuItems) => {
       <DropdownMenuTrigger>
         <FaBars />
       </DropdownMenuTrigger>
-      <DropdownMenuContent>
+      <DropdownMenuContent className="mr-4">
         {menuItems.map((item) => (
           <DropdownMenuItem key={item.label}>
             <Link href={item.url} target={item.target}>
