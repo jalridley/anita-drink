@@ -67,7 +67,7 @@ const BookingPage = () => {
             onChange={handleChange}
             placeholder="Your Booking Message"
             required
-            rows={10}
+            rows={5}
           />
           <Button
             type="submit"
