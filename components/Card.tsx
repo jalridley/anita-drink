@@ -21,15 +21,15 @@ const Card = ({ title, subtitle, text, alt, imageSrc }: CardProps) => {
           <span>{subtitle}</span>
           <GiThunderSkull />
         </h3>
-        <p className="w-full whitespace-pre-wrap text-xl leading-relaxed text-amber-50 md:text-2xl lg:w-3/4 lg:text-3xl">
+        <p className="w-full whitespace-pre-wrap text-lg leading-relaxed text-amber-50 md:text-xl lg:w-5/6 lg:text-2xl">
           {text}
         </p>
       </div>
       <Image
         alt={alt}
         src={imageSrc}
-        width={1249}
-        height={1707}
+        width={756}
+        height={756}
         className="order-1 aspect-square h-full w-full object-cover lg:order-2"
       />
     </article>
