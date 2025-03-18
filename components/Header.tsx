@@ -26,7 +26,7 @@ const Header = () => {
         <Image
           className="mr-2 h-full w-auto rounded-full border border-black"
           alt="Anita face stencil avatar"
-          src={'/anita-stencil-thumb.jpg'}
+          src={'/anita-stencil-thumb.webp'}
           width={272}
           height={272}
         />

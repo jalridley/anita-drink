@@ -13,61 +13,61 @@ export default function Home() {
   const carouselItems = [
     {
       alt: 'Anita posing on stage with teddy bears',
-      imageSrc: '/anita-teddies.jpg',
+      imageSrc: '/anita-teddies.webp',
       playerSrc:
         'https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fanitadrink%2Fanita-drink-live-mix-at-lunch-box-candy-berlin%2F',
     },
     {
       alt: "black and white stencil of Anita Drink's face",
-      imageSrc: '/anita-stencil-square.jpg',
+      imageSrc: '/anita-stencil-square.webp',
       playerSrc:
         'https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fanitadrink%2Fanita-drink-built-for-speed-mix%2F',
     },
     {
       alt: 'Anita posing with hands on hips',
-      imageSrc: '/anita-hip-pose.jpg',
+      imageSrc: '/anita-hip-pose.webp',
       playerSrc:
         'https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fanitadrink%2Fanita-drink-eye-am-the-dj-mixtape%2F',
     },
     {
       alt: 'Anita posing pink party streamers',
-      imageSrc: '/anita-pink.jpg',
+      imageSrc: '/anita-pink.webp',
       playerSrc:
         'https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fanitadrink%2Fanita-drink-presents-walking-after-midnight-mix%2F',
     },
     {
       alt: 'Anita posing in a ripped red dress',
-      imageSrc: '/anita-red-dress.jpg',
+      imageSrc: '/anita-red-dress.webp',
       playerSrc:
         'https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fanitadrink%2Fanita-drink-presents-16th-valencia-mix%2F',
     },
     {
       alt: 'Anita pulling messy blonde hair',
-      imageSrc: '/anita-hair-pull.jpg',
+      imageSrc: '/anita-hair-pull.webp',
       playerSrc:
         'https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fanitadrink%2Fanita-drink-presents-berlin-mambo-part-1%2F',
     },
     {
       alt: 'Anita posing glamourously in a sparkling dress',
-      imageSrc: '/anita-glamour.jpg',
+      imageSrc: '/anita-glamour.webp',
       playerSrc:
         'https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fanitadrink%2Fanita-drink-presents-berlin-mambo-part-2%2F',
     },
     {
       alt: 'Anita putting makeup powder on face',
-      imageSrc: '/anita-makeup.jpg',
+      imageSrc: '/anita-makeup.webp',
       playerSrc:
         'https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fanitadrink%2Fanita-drink-presents-soul-train%2F',
     },
     {
       alt: 'Anita posing with a wooden ladder',
-      imageSrc: '/anita-ladder.jpg',
+      imageSrc: '/anita-ladder.webp',
       playerSrc:
         'https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fanitadrink%2Fanita-drink-presents-boys-who-are-girls-mix%2F',
     },
     {
       alt: 'Anita posing with a white paint splattered background',
-      imageSrc: '/anita-splatter.jpg',
+      imageSrc: '/anita-splatter.webp',
       playerSrc:
         'https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fanitadrink%2Fanita-drink-presents-house-of-exit-tea-dance-feat-lotsa-drink%2F',
     },
@@ -91,7 +91,12 @@ export default function Home() {
                   width={756}
                   height={756}
                 />
-                <iframe width="100%" height="120" src={item.playerSrc}></iframe>
+                <iframe
+                  width="100%"
+                  height="120"
+                  src={item.playerSrc}
+                  data-cookieless="true"
+                ></iframe>
               </CarouselItem>
             ))}
           </CarouselContent>
