@@ -11,11 +11,11 @@ const AboutPage = () => {
           <p>
             Anita Drink, aka Juan Chamié, is a DJ, producer, fashion designer,
             and frontwoman whose career has spanned decades and continents.
-            Anita's lifelong love of sound is fueled by disco's infectious
-            rhythms, punk's rebellious spirit, and the deep grooves of house and
-            Latin beats. Known for her genre-bending sets, Anita brings a
-            signature tongue-in-cheek finesse to the decks that only she can
-            pull off.
+            Anita&#39;s lifelong love of sound is fueled by disco&#39;s
+            infectious rhythms, punk&#39;s rebellious spirit, and the deep
+            grooves of house and Latin beats. Known for her genre-bending sets,
+            Anita brings a signature tongue-in-cheek finesse to the decks that
+            only she can pull off.
           </p>
         </>
       ),
@@ -28,12 +28,12 @@ const AboutPage = () => {
       text: (
         <>
           <p>
-            Anita's love of DJing with vinyl is matched only by her ability to
-            manage energy and tell a story on the dance floor. Her journey began
-            when Juan Chamié—her alter ego—started throwing parties in Denver
-            and San Francisco that fused music and fashion into an intoxicating
-            mix. Alongside friends, Juan helped lay the foundation for a club
-            scene that still thrives today.
+            Anita&#39;s love of DJing with vinyl is matched only by her ability
+            to manage energy and tell a story on the dance floor. Her journey
+            began when Juan Chamié—her alter ego—started throwing parties in
+            Denver and San Francisco that fused music and fashion into an
+            intoxicating mix. Alongside friends, Juan helped lay the foundation
+            for a club scene that still thrives today.
           </p>
         </>
       ),
@@ -46,9 +46,9 @@ const AboutPage = () => {
         <>
           <p>
             Juan spent his early years in Miami, surrounded by the rhythms of
-            Latin music and the hum of his grandmother's sewing machine. These
-            early influences shaped his deep appreciation for both music and
-            fashion, two worlds he would later fuse in his creative journey.
+            Latin music and the hum of his grandmother&#39;s sewing machine.
+            These early influences shaped his deep appreciation for both music
+            and fashion, two worlds he would later fuse in his creative journey.
           </p>
           <p>
             By the time he moved to Denver in the early eighties, Juan had
@@ -81,7 +81,7 @@ const AboutPage = () => {
             As a radio DJ and record pool member, he played a key role in
             breaking new acts and bringing fresh sounds to the airwaves. Under
             the moniker Agent Babylon, he co-founded Terraform Records in the
-            early '90s, pushing out an eclectic mix of ambient, trip-hop, house,
+            early 90s, pushing out an eclectic mix of ambient, trip-hop, house,
             drum & bass, and electro.
           </p>
         </>
@@ -121,18 +121,19 @@ const AboutPage = () => {
               EXIT Berlin
             </a>
             , a boutique that embodies his deep-rooted love of music and punk
-            soul aesthetics. It's also where you can often find him practicing
-            on the turntables, preparing for Anita's late-night sets.
+            soul aesthetics. It&#39;s also where you can often find him
+            practicing on the turntables, preparing for Anita&#39;s late-night
+            sets.
           </p>
           <p>
             Beyond DJing, Anita is the electrifying frontwoman of Eat Lipstick,
             the infamous Berlin-based punk-glam-drag band she co-founded in
             2008. Their explosive performances earned them a fierce reputation.
             Their second LP, <em>New Wig No Rules!</em>, produced by Peaches,
-            further cemented their place in Berlin's music herstory. With a new
-            album slated for release this year, Eat Lipstick continues to defy
-            norms and captivate audiences worldwide, proving that they are truly
-            unstoppable.
+            further cemented their place in Berlin&#39;s music herstory. With a
+            new album slated for release this year, Eat Lipstick continues to
+            defy norms and captivate audiences worldwide, proving that they are
+            truly unstoppable.
           </p>
         </>
       ),
