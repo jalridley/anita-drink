@@ -4,7 +4,7 @@ import { GiThunderSkull } from 'react-icons/gi';
 type CardProps = {
   title?: string;
   subtitle?: string;
-  text: string;
+  text: React.ReactNode;
   alt: string;
   imageSrc: string;
 };
@@ -21,9 +21,9 @@ const Card = ({ title, subtitle, text, alt, imageSrc }: CardProps) => {
           <span>{subtitle}</span>
           <GiThunderSkull />
         </h3>
-        <p className="w-full whitespace-pre-wrap text-lg leading-relaxed text-amber-50 md:text-xl lg:w-5/6 lg:text-2xl">
+        <div className="w-full space-y-3 whitespace-pre-wrap text-lg leading-relaxed text-amber-50 md:text-xl lg:w-5/6 lg:text-2xl">
           {text}
-        </p>
+        </div>
       </div>
       <Image
         alt={alt}
