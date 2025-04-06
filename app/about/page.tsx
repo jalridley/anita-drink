@@ -21,6 +21,7 @@ const AboutPage = () => {
       ),
       alt: 'Anita putting makeup powder on face',
       imageSrc: '/anita-makeup.webp',
+      priority: true,
     },
     {
       subtitle: 'VINYL',

@@ -13,8 +13,6 @@ const Hero = () => {
         src={'/Anita_Drink_Stencil_transp.webp'}
         width={1249}
         height={1707}
-        priority
-        loading="eager"
       />
       <Image
         className="md:from-none md:to-none w-full bg-gradient-to-r from-white from-50% to-lime-400 to-50% md:z-10 md:bg-white md:bg-none"
@@ -22,7 +20,6 @@ const Hero = () => {
         src={'/Anita_Drink_Stencil_transp.webp'}
         width={1249}
         height={1707}
-        loading="eager"
       />
       <Image
         className="hidden w-full bg-lime-400 md:block"
@@ -30,7 +27,6 @@ const Hero = () => {
         src={'/Anita_Drink_Stencil_transp.webp'}
         width={1249}
         height={1707}
-        loading="eager"
       />
     </section>
   );
