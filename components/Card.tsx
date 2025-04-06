@@ -7,17 +7,9 @@ type CardProps = {
   text: React.ReactNode;
   alt: string;
   imageSrc: string;
-  priority: boolean;
 };
 
-const Card = ({
-  title,
-  subtitle,
-  text,
-  alt,
-  imageSrc,
-  priority,
-}: CardProps) => {
+const Card = ({ title, subtitle, text, alt, imageSrc }: CardProps) => {
   return (
     <article className="grid w-full overflow-hidden lg:h-[calc(100vh-56px)] lg:grid-cols-2">
       <div className="order-2 flex flex-col justify-center p-2 lg:order-1 lg:p-8">
@@ -39,7 +31,6 @@ const Card = ({
         width={756}
         height={756}
         className="order-1 aspect-square h-full w-full object-cover lg:order-2"
-        priority={priority || false}
       />
     </article>
   );
