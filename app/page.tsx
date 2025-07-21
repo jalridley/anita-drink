@@ -18,6 +18,15 @@ import Vinyl from '@/components/Vinyl';
 export default function Home() {
   const carouselItems = [
     {
+      alt: 'Anita in red underwear with dressed to kill print',
+      imageSrc: '/crotch-dressed-to-kill.webp',
+      playerSrc:
+        'https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fanitadrink%2Fanita-drink-live-at-house-of-exit-tea-dance%2F',
+      date: '2025 EXIT Tea Dance',
+      description:
+        'Back on the decks at Berlins House of EXIT Tea Dance this glittering mirror ball of a party mix! of re-worked and re-vamped classics for the dance floor! jump along rare cuts and edits dropped in that Oh so! Anita Drink style.',
+    },
+    {
       alt: 'Anita posing on stage with teddy bears',
       imageSrc: '/anita-teddies.webp',
       playerSrc:
