@@ -10,23 +10,23 @@ const Hero = () => {
       <Image
         className="hidden w-full bg-cyan-400 md:block"
         alt="black and white stencil of Anita Drink's face"
-        src={'/Anita_Drink_Stencil_transp.webp'}
-        width={1249}
-        height={1707}
+        src={'/Anita_Drink_Stencil_transp_md.webp'}
+        width={760}
+        height={1039}
       />
       <Image
         className="md:from-none md:to-none w-full bg-gradient-to-r from-white from-50% to-lime-400 to-50% md:z-10 md:bg-white md:bg-none"
         alt="black and white stencil of Anita Drink's face"
-        src={'/Anita_Drink_Stencil_transp.webp'}
-        width={1249}
-        height={1707}
+        src={'/Anita_Drink_Stencil_transp_md.webp'}
+        width={760}
+        height={1039}
       />
       <Image
         className="hidden w-full bg-lime-400 md:block"
         alt="black and white stencil of Anita Drink's face"
-        src={'/Anita_Drink_Stencil_transp.webp'}
-        width={1249}
-        height={1707}
+        src={'/Anita_Drink_Stencil_transp_md.webp'}
+        width={760}
+        height={1039}
       />
     </section>
   );
