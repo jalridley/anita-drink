@@ -116,7 +116,7 @@ const AboutPage = () => {
               href="https://www.exitberlin.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500"
+              className="text-pink-600 underline hover:text-cyan-400"
             >
               EXIT Berlin
             </a>

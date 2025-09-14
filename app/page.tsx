@@ -138,12 +138,16 @@ export default function Home() {
                 />
                 <Popover>
                   <PopoverTrigger asChild>
-                    <div className="lg:text-md flex cursor-pointer items-center justify-between bg-white p-4 text-xs font-bold text-gray-600 hover:bg-gray-100 md:text-sm">
+                    <button
+                      type="button"
+                      aria-label={`Show ${item.date} mix details`}
+                      className="lg:text-md flex w-full cursor-pointer items-center justify-between bg-white p-4 text-xs font-bold text-gray-600 hover:bg-gray-100 md:text-sm"
+                    >
                       {item.date}
-                      <div className="flex h-6 w-6 items-center justify-center rounded-full border border-gray-300 md:h-8 md:w-8">
+                      <span className="flex h-6 w-6 items-center justify-center rounded-full border border-gray-300 md:h-8 md:w-8">
                         <ChevronDown className="h-5 w-5" />
-                      </div>
-                    </div>
+                      </span>
+                    </button>
                   </PopoverTrigger>
                   <PopoverContent className="w-80">
                     <div className="space-y-2">
@@ -157,7 +161,10 @@ export default function Home() {
                   width="100%"
                   height="120"
                   src={item.playerSrc}
+                  title="Mixcloud audio player"
+                  allow="encrypted-media"
                   data-cookieless="true"
+                  loading="lazy"
                 ></iframe>
               </CarouselItem>
             ))}

@@ -71,7 +71,7 @@ const BookingPage = () => {
           />
           <Button
             type="submit"
-            className="w-full bg-cyan-400 font-bold md:text-xl"
+            className="w-full bg-cyan-400 font-bold text-gray-800 md:text-xl"
           >
             Send Booking Request
           </Button>
