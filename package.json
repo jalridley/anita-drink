@@ -24,6 +24,12 @@
     "tailwind-merge": "^2.5.4",
     "tailwindcss-animate": "^1.0.7"
   },
+  "overrides": {
+    "embla-carousel-react": {
+      "react": "$react",
+      "react-dom": "$react-dom"
+    }
+  },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^19.2.14",
