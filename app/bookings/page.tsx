@@ -17,22 +17,27 @@ const BookingPage = () => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit: React.SubmitEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
+
+    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+    const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+
+    if (!serviceId || !templateId || !publicKey) {
+      setStatus('Configuration error.');
+      return;
+    }
+
     setStatus('Sending...');
 
     try {
-      await emailjs.send(
-        'service_2ze675t', // Replace with your EmailJS Service ID
-        'template_16nyvjm', // Replace with your EmailJS Template ID
-        form,
-        'cOV1XYXh5B5Qr2qnc', // Replace with your EmailJS Public Key
-      );
+      await emailjs.send(serviceId, templateId, form, publicKey);
       setStatus('Message sent successfully!');
       setForm({ name: '', email: '', message: '' });
     } catch (error) {
-      setStatus('Failed to send message. Try again later.');
-      console.error('Failed to send message.', error);
+      setStatus('Failed to send message.');
+      console.error('EmailJS Error:', error);
     }
   };
 
@@ -71,7 +76,7 @@ const BookingPage = () => {
           />
           <Button
             type="submit"
-            className="w-full bg-cyan-400 font-bold text-gray-800 md:text-xl"
+            className="w-full bg-cyan-400 font-bold text-gray-800 hover:bg-cyan-300 md:text-xl"
           >
             Send Booking Request
           </Button>
