@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteBase /
+
+# Force HTTPS (Optional but good)
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# If it's not a real file, send it to index.html (Next.js handles the rest)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
